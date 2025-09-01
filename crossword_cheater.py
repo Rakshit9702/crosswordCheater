@@ -26,6 +26,7 @@ def load_wordlist(path: Path):
 def pattern_to_regex(pat: str):
     # user uses '*' for unknown letters (one per letter)
     # allow '?' as single wildcard too
+    # hey, this is an edit
     pat = pat.strip().lower()
     # validate: must contain letters and '*' or '?'
     if not re.fullmatch(r"[a-z\*\?]+", pat):
