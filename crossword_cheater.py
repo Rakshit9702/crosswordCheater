@@ -28,6 +28,7 @@ def pattern_to_regex(pat: str):
     # allow '?' as single wildcard too
     # hey, this is an edit
     # hey, this is 2nd edit
+    # 3rd edit
     pat = pat.strip().lower()
     # validate: must contain letters and '*' or '?'
     if not re.fullmatch(r"[a-z\*\?]+", pat):
